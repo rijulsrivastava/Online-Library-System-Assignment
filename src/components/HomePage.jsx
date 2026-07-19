@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import BookList from './BookList'
 
 function HomePage() {
 
@@ -17,16 +18,7 @@ function HomePage() {
       </div>
       <h2 className='text-3xl font-bold'>Popular Books</h2>
       <div>
-        {books.map((book)=>{
-          return(
-            <>
-            <h3>{book.title}</h3>
-            <h3>{book.author}</h3>
-            <p>{book.description}</p>
-            <br />
-            </>
-          )
-        })}
+        <BookList/>
       </div>
     </div>
   )
