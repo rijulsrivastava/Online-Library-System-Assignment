@@ -1,7 +1,10 @@
 import React from 'react'
-import { Books } from '../utils/dummyData'
+import { useSelector } from 'react-redux'
 
 function HomePage() {
+
+  const books = useSelector((store)=>store.book.items)
+
   return (
     <div className='m-8'>
       <h1 className='text-4xl font-bold'>Welcome to LMS</h1>
@@ -14,7 +17,7 @@ function HomePage() {
       </div>
       <h2 className='text-3xl font-bold'>Popular Books</h2>
       <div>
-        {Books.map((book)=>{
+        {books.map((book)=>{
           return(
             <>
             <h3>{book.title}</h3>
