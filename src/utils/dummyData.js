@@ -1,0 +1,294 @@
+export const Books = [
+  {
+    id: 1,
+    title: "The Echoes of Tomorrow",
+    author: "Evelyn Sinclair",
+    publisherDate: "2024-03-15",
+    pages: 412,
+    coverImage: "https://picsum.photos/id/24/300/450",
+    description: "A thrilling science fiction novel exploring the ethical dilemmas of timeline manipulation and human resilience."
+  },
+  {
+    id: 2,
+    title: "Mastering Modern JavaScript",
+    author: "Dr. Alexei Volkov",
+    publisherDate: "2025-11-02",
+    pages: 580,
+    coverImage: "https://picsum.photos/id/48/300/450",
+    description: "The definitive guide to advanced asynchronous patterns, performance tuning, and modern ecosystem frameworks."
+  },
+  {
+    id: 3,
+    title: "The Silent Culinary Revolution",
+    author: "Elena Rossi",
+    publisherDate: "2023-08-22",
+    pages: 295,
+    coverImage: "https://picsum.photos/id/76/300/450",
+    description: "An investigative and sensory deep dive into the history, science, and cultural shift towards plant-based fine dining."
+  },
+  {
+    id: 4,
+    title: "Shadows of the Neon Grid",
+    author: "Kaito Tanaka",
+    publisherDate: "2024-10-05",
+    pages: 340,
+    coverImage: "https://picsum.photos/id/96/300/450",
+    description: "A cyberpunk noir detective story set in a dystopian mega-city controlled by algorithmic corporate entities."
+  },
+  {
+    id: 5,
+    title: "The Architecture of Contentment",
+    author: "Sarah Jenkins",
+    publisherDate: "2022-05-14",
+    pages: 215,
+    coverImage: "https://picsum.photos/id/120/300/450",
+    description: "An architectural study exploring how interior spatial design, natural lighting, and textures impact long-term psychological wellbeing."
+  },
+  {
+    id: 6,
+    title: "Whispers of the Ancient Deep",
+    author: "Liam O'Connor",
+    publisherDate: "2023-01-30",
+    pages: 485,
+    coverImage: "https://picsum.photos/id/144/300/450",
+    description: "An oceanographic fantasy detailing an expedition crew that uncovers ancient, bioluminescent architectural ruins deep inside the Mariana Trench."
+  },
+  {
+    id: 7,
+    title: "Beneath the Rusting Stars",
+    author: "Cassandra Vance",
+    publisherDate: "2025-04-19",
+    pages: 368,
+    coverImage: "https://picsum.photos/id/180/300/450",
+    description: "An atmospheric post-apocalyptic survival tale focused on a lonely scrap mechanic rebuilding automated farming drones on a dying colony."
+  },
+  {
+    id: 8,
+    title: "The Logic of Chaos",
+    author: "Prof. Arthur Pendelton",
+    publisherDate: "2026-02-11",
+    pages: 424,
+    coverImage: "https://picsum.photos/id/200/300/450",
+    description: "An accessible exploration into complex systems, butterfly effects, and predictability models within modern economics and weather behavior."
+  },
+  {
+    id: 9,
+    title: "The Last Astronomer's Journal",
+    author: "Nina Holloway",
+    category: "Sci-Fi",
+    publisherDate: "2023-09-10",
+    pages: 398,
+    coverImage: "https://picsum.photos/id/220/300/450",
+    description: "A lone astronomer discovers mysterious signals from a distant galaxy that challenge humanity's understanding of the universe."
+  },
+  {
+    id: 10,
+    title: "Artificial Intelligence Unlocked",
+    author: "Daniel Brooks",
+    category: "Technology",
+    publisherDate: "2025-06-08",
+    pages: 520,
+    coverImage: "https://picsum.photos/id/230/300/450",
+    description: "A comprehensive guide to machine learning, deep learning, and modern AI applications."
+  },
+  {
+    id: 11,
+    title: "Mysteries of the Forgotten Temple",
+    author: "Sophia Carter",
+    category: "Adventure",
+    publisherDate: "2022-11-18",
+    pages: 360,
+    coverImage: "https://picsum.photos/id/240/300/450",
+    description: "An archaeologist uncovers an ancient civilization hidden beneath a dense rainforest."
+  },
+  {
+    id: 12,
+    title: "The Quantum Equation",
+    author: "Victor Hayes",
+    category: "Science",
+    publisherDate: "2026-01-20",
+    pages: 445,
+    coverImage: "https://picsum.photos/id/250/300/450",
+    description: "An engaging exploration of quantum mechanics and its impact on future technologies."
+  },
+  {
+    id: 13,
+    title: "The Midnight Library Keeper",
+    author: "Grace Mitchell",
+    category: "Fantasy",
+    publisherDate: "2024-08-15",
+    pages: 372,
+    coverImage: "https://picsum.photos/id/260/300/450",
+    description: "A magical librarian protects books that contain alternate realities."
+  },
+  {
+    id: 14,
+    title: "Learning React from Scratch",
+    author: "Emily Watson",
+    category: "Technology",
+    publisherDate: "2025-03-12",
+    pages: 490,
+    coverImage: "https://picsum.photos/id/270/300/450",
+    description: "A beginner-friendly guide to React, hooks, routing, and state management."
+  },
+  {
+    id: 15,
+    title: "The Crimson Kingdom",
+    author: "Oliver Reed",
+    category: "Fantasy",
+    publisherDate: "2023-07-04",
+    pages: 512,
+    coverImage: "https://picsum.photos/id/280/300/450",
+    description: "A young warrior embarks on a quest to unite kingdoms threatened by ancient dragons."
+  },
+  {
+    id: 16,
+    title: "Space Colony Alpha",
+    author: "Harper Stone",
+    category: "Sci-Fi",
+    publisherDate: "2024-12-01",
+    pages: 430,
+    coverImage: "https://picsum.photos/id/290/300/450",
+    description: "The first human colony beyond Earth faces unexpected dangers from within."
+  },
+  {
+    id: 17,
+    title: "Healthy Living Simplified",
+    author: "Rachel Green",
+    category: "Non-Fiction",
+    publisherDate: "2022-09-14",
+    pages: 280,
+    coverImage: "https://picsum.photos/id/300/300/450",
+    description: "Simple habits and scientific advice for maintaining a healthier lifestyle."
+  },
+  {
+    id: 18,
+    title: "Secrets of Cyber Security",
+    author: "Michael Foster",
+    category: "Technology",
+    publisherDate: "2025-09-22",
+    pages: 610,
+    coverImage: "https://picsum.photos/id/310/300/450",
+    description: "Learn ethical hacking, penetration testing, and defensive security strategies."
+  },
+  {
+    id: 19,
+    title: "The Emerald Compass",
+    author: "Abigail Turner",
+    category: "Adventure",
+    publisherDate: "2023-10-06",
+    pages: 355,
+    coverImage: "https://picsum.photos/id/320/300/450",
+    description: "A magical compass leads explorers through forgotten kingdoms and hidden treasures."
+  },
+  {
+    id: 20,
+    title: "Data Structures Made Easy",
+    author: "Kevin Morris",
+    category: "Education",
+    publisherDate: "2024-06-19",
+    pages: 470,
+    coverImage: "https://picsum.photos/id/330/300/450",
+    description: "An illustrated guide to arrays, linked lists, trees, graphs, and algorithms."
+  },
+  {
+    id: 21,
+    title: "The Ice Planet Chronicles",
+    author: "Lucas Bennett",
+    category: "Sci-Fi",
+    publisherDate: "2025-02-25",
+    pages: 390,
+    coverImage: "https://picsum.photos/id/340/300/450",
+    description: "Explorers discover intelligent life beneath the frozen surface of a distant planet."
+  },
+  {
+    id: 22,
+    title: "The Art of Mindfulness",
+    author: "Emma Collins",
+    category: "Non-Fiction",
+    publisherDate: "2022-03-18",
+    pages: 245,
+    coverImage: "https://picsum.photos/id/350/300/450",
+    description: "Practical techniques to improve focus, reduce stress, and cultivate happiness."
+  },
+  {
+    id: 23,
+    title: "Legends of the Crystal Forest",
+    author: "Isabella Moore",
+    category: "Fantasy",
+    publisherDate: "2024-11-11",
+    pages: 420,
+    coverImage: "https://picsum.photos/id/360/300/450",
+    description: "A magical forest hides ancient powers that could reshape the world."
+  },
+  {
+    id: 24,
+    title: "Python Programming Essentials",
+    author: "Andrew Clark",
+    category: "Technology",
+    publisherDate: "2025-01-17",
+    pages: 550,
+    coverImage: "https://picsum.photos/id/370/300/450",
+    description: "Master Python programming from the basics to advanced concepts with real-world projects."
+  },
+  {
+    id: 25,
+    title: "Journey to the Hidden Peaks",
+    author: "Chloe Adams",
+    category: "Adventure",
+    publisherDate: "2023-05-30",
+    pages: 365,
+    coverImage: "https://picsum.photos/id/380/300/450",
+    description: "An expedition into uncharted mountains reveals breathtaking discoveries."
+  },
+  {
+    id: 26,
+    title: "The Science of Tomorrow",
+    author: "Dr. Henry Lewis",
+    category: "Science",
+    publisherDate: "2026-04-08",
+    pages: 460,
+    coverImage: "https://picsum.photos/id/390/300/450",
+    description: "Emerging technologies that will transform medicine, transportation, and communication."
+  },
+  {
+    id: 27,
+    title: "Digital Marketing Blueprint",
+    author: "Sophia Evans",
+    category: "Education",
+    publisherDate: "2024-09-09",
+    pages: 330,
+    coverImage: "https://picsum.photos/id/400/300/450",
+    description: "A complete roadmap for building successful online marketing campaigns."
+  },
+  {
+    id: 28,
+    title: "The Dragon's Oath",
+    author: "Benjamin Hall",
+    category: "Fantasy",
+    publisherDate: "2023-12-14",
+    pages: 480,
+    coverImage: "https://picsum.photos/id/410/300/450",
+    description: "An epic fantasy where dragons and humans must unite against an ancient evil."
+  },
+  {
+    id: 29,
+    title: "Ocean Beyond the Horizon",
+    author: "Natalie Brooks",
+    category: "Adventure",
+    publisherDate: "2025-05-05",
+    pages: 350,
+    coverImage: "https://picsum.photos/id/420/300/450",
+    description: "A team of sailors embarks on a perilous voyage across uncharted waters."
+  },
+  {
+    id: 30,
+    title: "Clean Code with JavaScript",
+    author: "Jonathan Price",
+    category: "Technology",
+    publisherDate: "2026-03-01",
+    pages: 505,
+    coverImage: "https://picsum.photos/id/430/300/450",
+    description: "Best practices, design patterns, and coding standards for writing maintainable JavaScript applications."
+  }
+];
