@@ -2,6 +2,7 @@ import React from 'react'
 import { MdHome } from "react-icons/md";
 import { IoSearchSharp } from "react-icons/io5";
 import { BiSolidBookAdd } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -12,16 +13,22 @@ function Header() {
                 </div>
                 <ul type='none' className='flex'>
                     <div className='flex mx-4'>
-                        <MdHome/>
-                        <li>Home</li>
+                        <Link to={'/'}>
+                            <MdHome />
+                            <li>Home</li>
+                        </Link>
                     </div>
                     <div className='flex mx-4'>
-                        <IoSearchSharp/>
-                        <li>Browse Books</li>
+                        <Link to={'/browseBook'}>
+                            <IoSearchSharp />
+                            <li>Browse Books</li>
+                        </Link>
                     </div>
                     <div className='flex mx-4'>
-                        <BiSolidBookAdd/>
-                        <li>Add Book</li>
+                        <Link to={'/addBook'}>
+                            <BiSolidBookAdd />
+                            <li>Add Book</li>
+                        </Link>
                     </div>
                 </ul>
             </nav>
