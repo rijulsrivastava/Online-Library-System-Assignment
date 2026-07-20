@@ -8,10 +8,7 @@ const bookSlice = createSlice({
     },
     reducers: {
         addItem: (state, action) => {
-            state.items.push()
-        },
-        removeItem: (state) => {
-            state.items.pop()
+            state.items.unshift(action.payload)
         },
     }
 })
