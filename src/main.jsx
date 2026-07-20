@@ -9,6 +9,7 @@ import BrowseBook from './components/BrowseBook.jsx'
 import AddBook from './components/AddBook.jsx'
 import BookList from './components/BookList.jsx'
 import BookDetails from './components/BookDetails.jsx'
+import Error from './components/Error.jsx'
 
 const appProvider = createBrowserRouter([
   {
@@ -35,7 +36,8 @@ const appProvider = createBrowserRouter([
         path:'/bookDetails/:id',
         element:<BookDetails/>
       }
-    ]
+    ],
+    errorElement:<Error/>
   }
 ])
 
