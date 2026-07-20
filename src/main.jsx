@@ -8,6 +8,7 @@ import Category from './components/Category.jsx'
 import BrowseBook from './components/BrowseBook.jsx'
 import AddBook from './components/AddBook.jsx'
 import BookList from './components/BookList.jsx'
+import BookDetails from './components/BookDetails.jsx'
 
 const appProvider = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const appProvider = createBrowserRouter([
       {
         path:'/book/:category',
         element:<BrowseBook/>
+      },
+      {
+        path:'/bookDetails/:id',
+        element:<BookDetails/>
       }
     ]
   }
