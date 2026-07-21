@@ -6,12 +6,15 @@ import { useParams } from 'react-router-dom'
 
 function BrowseBook() {
 
+    // useSelector is used to get books from the store
     const books = useSelector((store) => store.book.items)
     const [searchedText, setSearchedText] = useState('')
     const [filteredBooks, setFilteredBooks] = useState(books)
 
+    // useParams is used to get choosen category from the url-section
     const { category } = useParams()
 
+    // useEffect is used to filter books whenever any of [searchedText, category, books] is changed
     useEffect(() => {
 
         let temp = books
@@ -31,13 +34,14 @@ function BrowseBook() {
 
 
     return (
-        <div>
-            <h2 className='font-bold text-3xl'>Categories</h2>
-            <div className='flex'>
+        <div className='text-[#e6bc8f]'>
+            <h2 className='font-bold text-5xl m-5 self-start'>Categories</h2>
+            <div className='self-start flex m-8'>
                 <Category setFilteredBooks={setFilteredBooks} />
             </div>
-            <h2 className='font-bold text-lg'>Search Book</h2>
-            <input type="text" onChange={(e) => setSearchedText(e.target.value)} value={searchedText} placeholder='search book by title or author' className='border mx-8 my-2 w-5/12 p-2' />
+            <h2 className='font-bold text-5xl m-5 self-start'>Search Book</h2>
+            <input type="text"  onChange={(e) => setSearchedText(e.target.value)} value={searchedText} placeholder='search book by title or author' className='border rounded-2xl w-5/12 text-center py-2 font-bold m-8 mt-5 self-start ' />
+            {/* to reflect changes of filtered book below is used */}
             <BookList books={filteredBooks} />
         </div>
     )

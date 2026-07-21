@@ -8,10 +8,11 @@ import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
+    // to provide access of store to all the components Provider is used
     <Provider store={appStore}>
       <div>
         <Header />
-        <Outlet/>
+        <Outlet/> {/*Outlet is used to render child components*/}
       </div>
     </Provider>
   )
